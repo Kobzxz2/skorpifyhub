@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKORPIFY.COM | Freelance & Consulting</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons for beautiful icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #3b82f6, #10b981);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased selection:bg-blue-200 selection:text-blue-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="text-2xl font-bold tracking-tighter text-gray-900">SKORPIFY<span class="text-blue-600">.COM</span></a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 font-medium transition">About Me</a>
+                    <a href="#services" class="text-gray-600 hover:text-blue-600 font-medium transition">Services & Commissions</a>
+                    <a href="#contact" class="px-4 py-2 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition shadow-md">Contact Me</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-gray-900 focus:outline-none">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <a href="#about" class="block px-4 py-3 text-gray-600 hover:bg-gray-50">About Me</a>
+            <a href="#services" class="block px-4 py-3 text-gray-600 hover:bg-gray-50">Services & Commissions</a>
+            <a href="#contact" class="block px-4 py-3 text-blue-600 font-semibold hover:bg-gray-50">Contact Me</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 md:pt-40 md:pb-28 px-4 bg-gradient-to-br from-gray-900 to-gray-800 text-white text-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
+                Professional Solutions & <br>
+                <span class="gradient-text">Expert Assistance</span>
+            </h1>
+            <p class="text-xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Welcome to SKORPIFY.COM. I provide top-tier technical support, creative problem solving, and dedicated freelance work tailored to your needs.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contact" class="px-8 py-3 rounded-full bg-blue-600 text-white font-semibold hover:bg-blue-500 transition shadow-lg shadow-blue-500/30 flex items-center justify-center gap-2">
+                    <i data-lucide="message-square" class="w-5 h-5"></i> Request Help
+                </a>
+                <a href="#services" class="px-8 py-3 rounded-full bg-transparent border border-gray-500 text-gray-300 font-semibold hover:bg-gray-800 hover:text-white transition flex items-center justify-center gap-2">
+                    <i data-lucide="info" class="w-5 h-5"></i> View Commission Rates
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">About Me</h2>
+                    <p class="text-gray-600 text-lg mb-4 leading-relaxed">
+                        I am an experienced professional dedicated to helping clients overcome their toughest challenges. Whether you need an ongoing partner for a large project or quick troubleshooting, I bring expertise and reliability to the table.
+                    </p>
+                    <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+                        My goal is to deliver high-quality results that exceed expectations, maintaining clear communication and transparent processes every step of the way.
+                    </p>
+                    <div class="flex gap-4">
+                        <div class="flex items-center gap-2 text-gray-700 font-medium bg-gray-100 px-4 py-2 rounded-lg">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i> Fast Turnaround
+                        </div>
+                        <div class="flex items-center gap-2 text-gray-700 font-medium bg-gray-100 px-4 py-2 rounded-lg">
+                            <i data-lucide="shield" class="w-5 h-5 text-blue-500"></i> Reliable Quality
+                        </div>
+                    </div>
+                </div>
+                <div class="relative hidden md:block">
+                    <!--Placeholder for profile or abstract image   --> 
+                    <div class="aspect-square bg-gradient-to-tr from-blue-100 to-green-50 rounded-3xl shadow-xl flex items-center justify-center border border-gray-100">
+                        <i data-lucide="user" class="w-32 h-32 text-gray-300"></i>
+                    </div>
+                    <!-- Decorative element -->
+                    <div class="absolute -bottom-6 -left-6 w-24 h-24 bg-blue-600 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
+                    <div class="absolute -top-6 -right-6 w-24 h-24 bg-green-500 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services & Commissions Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Services & Commissions</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Transparent pricing for quality work. Choose the tier that best fits your needs, or contact me for a custom quote.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Tier 1 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 hover:shadow-lg transition flex flex-col">
+                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="zap" class="w-6 h-6 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Quick Help</h3>
+                    <p class="text-gray-500 mb-4 flex-grow">Perfect for small bugs, quick advice, or minor adjustments.</p>
+                    <div class="mb-6">
+                        <span class="text-3xl font-bold text-gray-900">Php.150</span>
+                        <span class="text-gray-500">/task</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-gray-600"><i data-lucide="check" class="w-4 h-4 text-green-500 mr-2"></i> 24-hour turnaround</li>
+                        <li class="flex items-center text-gray-600"><i data-lucide="check" class="w-4 h-4 text-green-500 mr-2"></i> 1
+                             Revision</li>
+                    </ul>
+                    <a href="#contact" class="w-full py-2 px-4 rounded-lg border border-blue-600 text-blue-600 font-semibold text-center hover:bg-blue-50 transition mt-auto">Select Plan</a>
+                </div>
+
+                <!-- Tier 2 -->
+                <div class="bg-gray-900 rounded-2xl shadow-xl border border-gray-800 p-8 transform md:-translate-y-4 flex flex-col relative">
+                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-blue-500 to-green-500 text-white px-4 py-1 rounded-full text-sm font-bold shadow-lg">
+                        MOST POPULAR
+                    </div>
+                    <div class="w-12 h-12 bg-gray-800 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="briefcase" class="w-6 h-6 text-blue-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Standard Commission</h3>
+                    <p class="text-gray-400 mb-4 flex-grow">Ideal for medium-sized projects, setups, and standard deliverables.</p>
+                    <div class="mb-6">
+                        <span class="text-3xl font-bold text-white">Php.250</span>
+                        <span class="text-gray-400">/project</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-gray-300"><i data-lucide="check" class="w-4 h-4 text-blue-400 mr-2"></i> 3-5 days delivery</li>
+                        <li class="flex items-center text-gray-300"><i data-lucide="check" class="w-4 h-4 text-blue-400 mr-2"></i> Dedicated support</li>
+                        <li class="flex items-center text-gray-300"><i data-lucide="check" class="w-4 h-4 text-blue-400 mr-2"></i> up to 3 Revisions</li>
+                    </ul>
+                    <a href="#contact" class="w-full py-2 px-4 rounded-lg bg-blue-600 text-white font-semibold text-center hover:bg-blue-500 transition mt-auto shadow-lg shadow-blue-500/30">Select Plan</a>
+                </div>
+
+                <!-- Tier 3 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 hover:shadow-lg transition flex flex-col">
+                    <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="crown" class="w-6 h-6 text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Retainer / Custom</h3>
+                    <p class="text-gray-500 mb-4 flex-grow">For large scale projects, ongoing maintenance, and deep integrations.</p>
+                    <div class="mb-6">
+                        <span class="text-3xl font-bold text-gray-900">Custom</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-gray-600"><i data-lucide="check" class="w-4 h-4 text-green-500 mr-2"></i> Priority Support</li>
+                        <li class="flex items-center text-gray-600"><i data-lucide="check" class="w-4 h-4 text-green-500 mr-2"></i> Unlimited Revisions</li>
+                        <li class="flex items-center text-gray-600"><i data-lucide="check" class="w-4 h-4 text-green-500 mr-2"></i> Strategy calls</li>
+                         <li class="flex items-center text-gray-600"><i data-lucide="check" class="w-4 h-4 text-green-500 mr-2"></i> Let's talk</li>
+                    </ul>
+                         <a href="contanct"class="w-full py-2 px-4 rounded-lg border border-blue-600 text-blue-600 font-semibold text-center hover:bg-blue-50 transition mt-auto shadow-blue-500/30">Select Plan</a>
+                        </div>
+                   
+                    <!-- Tier 4 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 hover:shadow-lg transition flex flex-col">
+                    <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="crown" class="w-6 h-6 text-purple-600"></i>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-blue-600 rounded-3xl overflow-hidden shadow-2xl">
+                <div class="grid lg:grid-cols-2">
+                    
+                    <!-- Contact Info Card -->
+                    <div class="p-10 md:p-16 text-white flex flex-col justify-center">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Need Help? Let's Connect.</h2>
+                        <p class="text-blue-100 text-lg mb-10">
+                            Fill out the form with your project details or commission request with details, and I will get back to you within 24 hours.
+                        </p>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="mail" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <p class="text-blue-200 text-sm">Email Me At</p>
+                                    <p class="font-semibold text-lg">kobebriancuizon964.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="phone" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <p class="text-blue-200 text-sm">Call / Text</p>
+                                    <p class="font-semibold text-lg">0923 1219 158</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="map-pin" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <p class="text-blue-200 text-sm">Location</p>
+                                    <p class="font-semibold text-lg">Available Worldwide (Remote)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="bg-white p-10 md:p-16">
+                        <form onsubmit="event.preventDefault(); alert('Message feature ready to be connected to your backend! (e.g. Formspree or EmailJS)');" class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                                <input type="text" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition" placeholder="Ben Dover">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                                <input type="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition" placeholder="BenDover@example.com">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Subject / Commission Type</label>
+                                <select class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition bg-white">
+                                    <option>Quick Help ( Php.150)</option>
+                                    <option>Standard Commission (Php.250)</option>
+                                    <option>Custom Project / Retainer (Php.500)</option>
+                                    <option>General Inquiry( Depends on the project)</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Project Details</label>
+                                <textarea required rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition resize-none" placeholder="How can I help you?"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-gray-900 text-white font-bold py-3 px-4 rounded-lg hover:bg-gray-800 transition shadow-lg flex justify-center items-center gap-2">
+                                Send Request <i data-lucide="send" class="w-4 h-4"></i>
+                            </button>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <a href="#" class="text-2xl font-bold tracking-tighter text-white">SKORPIFY<span class="text-blue-500">.COM</span></a>
+                <p class="text-sm mt-2">© 2026 SKORPIFY. All rights reserved.</p>
+            </div>
+            <div class="flex space-x-6">
+                <!-- Social Links -->
+                <a href="#" class="text-gray-400 hover:text-white transition"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white transition"><i data-lucide="github" class="w-5 h-5"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white transition"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize Icons and Mobile Menu script -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle Logic
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileLinks = menu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
